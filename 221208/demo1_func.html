@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>function</title>
+    </head>
+    <body>
+        생활코딩 강좌 함수파트 코드메모
+        <script>
+        /*
+        function 함수명 ( [인자 ... [,인자]] ){
+            return 반환값
+        }
+        */
+        function numbering() {
+            var i = 0;
+            while(i < 10){
+                document.write(i);
+                i += 1;
+            }
+        }
+        function get_member1() {
+            return 'egoing' ;
+        }
+        function get_member2() {
+            return 'k8805' ;
+        }
+        function get_argument(arg) {
+            return arg * 1000 ;
+        }
+
+        function get_arguments(arg1, arg2){
+            return arg1 + arg2
+        }
+
+        var numbering = function (){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i += 1;
+            }   
+        }
+        numbering();
+        //numbering 이라는 변수가 function 함수를 갖게됨.
+        //결국 위에 function numbering() 과 var numbering = function ()는 같은결과.
+
+        (function (){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i += 1;
+            })();
+            //자체 함수를 호출. (익명함수)
+
+
+
+        document.write(get_argument(1));
+        
+
+        document.write(get_argument(2));
+        
+        document.write(get_argument(10,20));
+        document.write(get_argument(20,30));
+
+        document.write(get_member1());
+        
+
+        document.write(get_member2());
+        
+
+        numbering();
+        
+        </script>
+    </body>
+</html>

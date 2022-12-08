@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function get_members() {
+        return ["egoing", "k8805", "sorialgi", "leezche"];
+      }
+
+      members = get_members();
+
+      for (var i = 0; i < members.length; i++) {
+        document.write(members[i].toUpperCase() + "<br />");
+      }
+
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+
+      document.write(members[0].toUpperCase() + "<br />");
+      document.write(members[1].toUpperCase() + "<br />");
+      document.write(members[2].toUpperCase() + "<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li.push("f");
+      document.write("<br />");
+      document.write("<br />");
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li = li.concat(["f", "g"]);
+      // concat은 인자로 배열을 받음
+      document.write(li);
+      document.write("<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li.unshift("z");
+      document.write(li);
+      document.write("<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li.splice(2, 0, "B");
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li.shift();
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+
+      var li = ["a", "b", "c", "d", "e"];
+      li.pop();
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+
+      var li = ["c", "e", "a", "b", "d"];
+      li.sort();
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+
+      var li = ["c", "e", "a", "b", "d"];
+      li.reverse();
+      document.write(li);
+      document.write("<br />");
+      document.write("<br />");
+      document.write("<br />");
+    </script>
+  </body>
+</html>
