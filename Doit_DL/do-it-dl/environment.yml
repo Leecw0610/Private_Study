@@ -1,0 +1,13 @@
+name: do-it-dl
+dependencies:
+- python=3.7
+- scikit-learn
+- numpy
+- pandas
+- matplotlib
+- pillow
+- jupyter
+- cython
+- pip:
+  - tensorflow-gpu
+  - keras
