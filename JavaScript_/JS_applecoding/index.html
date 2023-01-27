@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="alert-box" id="alert1">
+        <p>아이디를 입력안하셨네요</p>
+        <button onclick="알림창열기('none')">OFF</button>
+        <button id="close"> X </button>
+    </div>
+    <button onclick="알림창열기('block')">ON</button>
+
+
+    <div class="alert-box" id="alert2">
+        <p>비번을 입력안하셨네요</p>
+        <button onclick="알림창열기2('none')">OFF</button>
+        <button id="close"> X </button>
+    </div>
+    <button onclick="알림창열기2('block')">ON</button>
+
+    <button onclick="알림창1열기()">버튼1</button>
+    <button onclick="알림창2열기()">버튼2</button>
+
+    <h2 id="hello">
+        안녕하세요
+    </h2>
+    <h2 id="hi">
+        올때메로나
+    </h2>
+
+    <h4 id="test" class="test1">안녕하세요</h4>
+
+    <script>
+
+        // document.querySelector('#test')[0]
+        $('.test1').html();
+        $('#test').addClass('yellow-bg')
+
+
+    </script>
+
+
+
+    <script>
+
+
+        document.getElementById('close').addEventListener('click', function () {
+            document.getElementById('alert1').style.display = 'none';
+        });
+
+
+
+
+
+
+
+
+        document.getElementById('hello').innerHTML = "안뇽";
+        document.getElementById('hello').style.fontSize = "50px";
+        document.getElementById('hello').style.color = "gold";
+        document.getElementById('hi').innerHTML = "올때바밤바";
+        document.getElementById('hi').style.color = "purple";
+
+
+        function 알림창열기(구멍) {
+            document.getElementById('alert1').style.display = 구멍;
+        }
+
+        function 알림창열기2(구멍) {
+            document.getElementById('alert2').style.display = 구멍;
+        }
+
+        function 알림창1열기() {
+
+            document.getElementById('title').innerHTML = '아이디를 입력하세요.';
+
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function 알림창2열기() {
+
+            document.getElementById('title').innerHTML = '비번을 입력하세요.';
+
+            document.getElementById('alert').style.display = 'block';
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
